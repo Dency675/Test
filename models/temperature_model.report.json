@@ -1,0 +1,44 @@
+{
+  "source": "sense_hat",
+  "station_id": "station01",
+  "raw_observations": 628,
+  "examples": 482,
+  "train_examples": 246,
+  "validation_examples": 110,
+  "test_examples": 94,
+  "validation_trials": [
+    {
+      "alpha": 0.1,
+      "mae_c": 0.05404152045160244
+    },
+    {
+      "alpha": 1.0,
+      "mae_c": 0.05290832103363876
+    },
+    {
+      "alpha": 10.0,
+      "mae_c": 0.05067626150057207
+    },
+    {
+      "alpha": 100.0,
+      "mae_c": 0.1291657797857917
+    }
+  ],
+  "selected_alpha": 10.0,
+  "selected_validation_mae_c": 0.05067626150057207,
+  "test_persistence_all": {
+    "mae_c": 0.0740975319071019,
+    "rmse_c": 0.0900014810169074
+  },
+  "test_ridge_all_before_guard": {
+    "mae_c": 0.0602985812954803,
+    "rmse_c": 0.07299607486014938
+  },
+  "test_guard_coverage": 0.0,
+  "test_ridge_accepted_only": null,
+  "test_persistence_on_same_accepted_cases": null,
+  "python": "3.12.10",
+  "numpy": "2.5.5",
+  "sklearn": "1.9.1",
+  "warning": "Chronological holdout, not independent field validation. Adjacent errors remain correlated."
+}

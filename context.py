@@ -43,7 +43,7 @@ class ContextPolicy:
 		elif temperature <= 26 and humidity <= 70:
 			self.attention = False
 		state = "attention" if self.attention else "normal"
-		why = (f"Five-reading means: { temperature: .1f} C and {humidity:.1f}% RH"
+		why = (f"Five-reading means: { temperature: .1f} C and {humidity:.1f}% RH."
 			"Enter attention at 28 C or 75% RH; clear at 26 C AND 70% RH.")
 		return {"state" : state, "why": why,
 			"heat_index_c": heat_index_c(temperature,humidity)}

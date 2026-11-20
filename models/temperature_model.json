@@ -1,0 +1,63 @@
+{
+  "format_version": 1,
+  "model_id": "dafeaa2d2e78",
+  "created_at": "2026-11-20T02:12:35.634Z",
+  "station_id": "station01",
+  "source": "sense_hat",
+  "calibration_id": "uncalibrated",
+  "temperature_offset_c": 0.0,
+  "sample_interval_s": 5,
+  "horizon_s": 60,
+  "feature_names": [
+    "temperature_c",
+    "humidity_pct",
+    "pressure_hpa",
+    "temperature_mean5_c",
+    "humidity_mean5_pct",
+    "temperature_delta5_c"
+  ],
+  "coefficients": [
+    0.2507440130020092,
+    -0.0007211287054204995,
+    0.2547142646898721,
+    0.2561821949093564,
+    -0.010020394612058323,
+    0.005233446820762906
+  ],
+  "intercept": 36.069165175523224,
+  "mean": [
+    36.0431077848605,
+    41.08047083722867,
+    988.2591175606581,
+    36.035800077857054,
+    41.09061435916558,
+    0.015794552438627412
+  ],
+  "scale": [
+    0.7370354187599502,
+    0.5919074790147668,
+    7.943670894267723,
+    0.7347581223737587,
+    0.587345198912567,
+    0.09373413943024099
+  ],
+  "training_min": [
+    34.519256591796875,
+    39.94475173950195,
+    979.199462890625,
+    34.56581039428711,
+    40.31076431274414,
+    -0.3222999572753906
+  ],
+  "training_max": [
+    37.00810623168945,
+    42.68365478515625,
+    995.374755859375,
+    36.947228240966794,
+    42.629248046875,
+    0.4118232727050781
+  ],
+  "alpha": 10.0,
+  "dataset_sha256": "13613587320846dc502cb23d074ac2f9825a282a953d72052f2990c450e64a5a",
+  "purpose": "Teaching only: forecast this station's local sensor temperature, in shadow mode."
+}
